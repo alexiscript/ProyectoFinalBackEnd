@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-header {
+    margin: 0 auto;
+    padding: 30px 50px 20px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #aed0e0;
+    /* color: #fff; */
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #0070E0;
+}
+
+.header-logo i {
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0px;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+ul.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.menu li a {
+    display: block;
+    margin: 10px 30px 10px 30px;
+    text-decoration: none;
+    color: #2c3e5c;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* padding-inline-start: 10px; */
+    width: 100%;
+    padding: 0px;
+}
+
+ul.submenu li {
+    display: block;
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+ul.submenu li a {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.menu li:hover ul.submenu {
+    display: block;
+}
+
+ul.menu li a:hover {
+    color: #E07000;
+}
+
+ul.submenu li a:hover {
+    color: #E07000;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 25%;
+
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    /* padding: 5px; */
+    font-size: 16px;
+    /* color: #1E293B; */
+    outline: none;
+}
+
+.search-bar button[type="submit"] {
+    background-color: transparent;
+    color: #0070E0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-bar button:hover {
+    color: #E07000;
+}
+
+
+
+
+.container-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background-color: #f4f6f9;
+}
+
+.profile-card {
+    width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.profile-info i {
+    font-size: 90px;
+    color: #0070d2;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.profile-details {
+    margin: 15px 15px 0px 15px;
+}
+
+.profile-documents {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.profile-documents .doc {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    display: inline-block;
+    background-color:#f4f6f9;
+    color: rgb(36, 36, 36);
+    border: 1px dashed #ccc;
+    padding: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-label:hover {
+    background-color: #E07000;
+}
+
+.file-label-ok {
+    display: inline-block;
+    background-color: #53af5b;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.file-label-upload{
+    display: inline-block;
+    background-color:#E07000;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.file-label-ok i {
+    margin-right: 5px;
+}
+
+.file-label i {
+    margin-right: 5px;
+}
+
+.file-label span {
+    font-weight: bold;
+}
+
+button.btn {
+    background-color: #0070E0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.btn:hover {
+    background-color: #E07000;
+}
+
+button.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+form button {
+    background-color: #0070E0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color:#E07000;
+}
+
+form span{
+    font-size: 13px;
+}
