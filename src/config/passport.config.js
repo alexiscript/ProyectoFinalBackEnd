@@ -6,8 +6,6 @@ import User from '../dao/dbManagers/users.js'
 
 
 const PRIVATE_KEY = "Secret";
-const CLIENTID = "Iv1.98706f2a29e23791";
-const CLIENTSECRET = "02883cf4fae22379908b4ff6f6495bdac34a993c";
 
 const LocalStrategy = local.Strategy;
 
@@ -19,8 +17,8 @@ const usersManager = new User();
 const initializePassport = () => {
 
     passport.use('github', new GitHubStrategy({
-        clientID: CLIENTID,
-        clientSecret: CLIENTSECRET,
+        clientID: process.env.CLIENTID,
+        clientSecret: process.env.CLIENTSECRET,
         callbackURL: 'http://localhost:8080/api/authGithub/github-callback'
     }, async(accessToken, refreshToken, profile, done) => {
         try{

@@ -30,8 +30,8 @@ const transporter = nodemailer.createTransport({
     service: "gmail", // servicio que vamos a usar  
     port: 465, // puerto que usa gmail
     auth: { // autentificación que cree en gmail
-        user: "alexiscript@gmail.com",
-        pass: "affimbropdzqrffl"
+        user: process.env.EMAILAR,
+        pass: process.env.COD
     }
 });
 
