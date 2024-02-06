@@ -5,7 +5,7 @@ import { ResultNotFound } from '../../utils/customExceptions.js';
 import * as sessionsService from '../../services/sessions.service.js';
 import * as cartsService from '../../services/carts.service.js';
 
-const PRIVATE_KEY = config.secret;
+const PRIVATE_KEY = "Secret";
 
 const privateAccess = (req, res, next) => {
     const token = req.cookies.token;

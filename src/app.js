@@ -85,7 +85,9 @@ app.use('/api/products', productsRouter.getRouter());
 app.use('/loggerTest', loggerTest); 
 
 
-const server = app.listen(8080, () => console.log('Listening'));
+const port = process.env.PORT || 8080;
+const server = app.listen(port, "0.0.0.0", () => console.log(`Listening on port ${port}`));
+
 
 
 // ----------------------------------socket--------------------------------------

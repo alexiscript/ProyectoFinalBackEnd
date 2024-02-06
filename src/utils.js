@@ -9,11 +9,8 @@ import { faker } from '@faker-js/faker/locale/es';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const PRIVATE_KEY = config.secret;
-const SERVICE = config.service;
-const PORT = config.port;
-const USER = config.user;
-const PASS = config.pass;
+const PRIVATE_KEY = "Secret";
+
 
 const hashData = async (password) => {
     return bcrypt.hash(password,10); 
@@ -30,11 +27,11 @@ const generateToken = (usuario) => {
 
 //configuración SMTP gmail 
 const transporter = nodemailer.createTransport({
-    service: SERVICE, //servicio que vamos a usar  
-    port: PORT, //puerto que usa gmail
-    auth: { //autentificación que cree en gmail
-        user: USER,
-        pass: PASS
+    service: "gmail", // servicio que vamos a usar  
+    port: 465, // puerto que usa gmail
+    auth: { // autentificación que cree en gmail
+        user: "alexiscript@gmail.com",
+        pass: "affimbropdzqrffl"
     }
 });
 

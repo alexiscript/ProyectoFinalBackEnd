@@ -3,7 +3,7 @@ import { IncorrectLoginCredentials, InputIncomplete, ResultNotFound, SamePasswor
 import jwt from 'jsonwebtoken';
 import config from '../../config/config.js';
 
-const PRIVATE_KEY = config.secret;
+const PRIVATE_KEY = "Secret";
 
 const register = async (req, res) => {
     try {

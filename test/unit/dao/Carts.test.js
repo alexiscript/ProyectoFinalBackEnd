@@ -3,7 +3,7 @@ import Carts from '../../../src/dao/dbManagers/carts.js';
 import chai from 'chai';
 import config from '../../../src/config/config.js'; 
 
-const URI = config.mongoUrlTesting; 
+const URI = "mongodb + srv://Desafio:XHzxaGgsH9DmOh7N@desafio.tsokbhn.mongodb.net/test?retryWrites=true&w=majority"; 
 
 await mongoose.connect(URI);  //conexión a BD
 

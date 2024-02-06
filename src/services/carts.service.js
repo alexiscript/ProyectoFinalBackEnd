@@ -9,7 +9,7 @@ import uniqid from 'uniqid';
 import { successfulPurchase } from '../utils/customHTML.js';
 import { sendEmail } from './mail.service.js';
 
-const PRIVATE_KEY = config.secret;
+const PRIVATE_KEY = "Secret";
 
 const cartsRepository = new CartsRepository();
 const ticketsManager = new Tickets();

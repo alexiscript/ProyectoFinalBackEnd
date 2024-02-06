@@ -3,11 +3,11 @@ import local from 'passport-local';
 import GitHubStrategy from 'passport-github2';
 import jwt from 'passport-jwt';
 import User from '../dao/dbManagers/users.js'
-import config from '../config/config.js'; 
 
-const PRIVATE_KEY = config.secret;
-const CLIENTID = config.clientId;
-const CLIENTSECRET = config.clientSecret;
+
+const PRIVATE_KEY = "Secret";
+const CLIENTID = "Iv1.98706f2a29e23791";
+const CLIENTSECRET = "02883cf4fae22379908b4ff6f6495bdac34a993c";
 
 const LocalStrategy = local.Strategy;
 

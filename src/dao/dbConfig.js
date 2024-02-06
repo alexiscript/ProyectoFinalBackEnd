@@ -3,8 +3,8 @@ import session from 'express-session';
 import MongoStore from 'connect-mongo';
 import config from '../config/config.js'; 
 
-const URI = config.mongoUrl; 
-const SECRET = config.secret;
+const URI = process.env.MONGO_URL; 
+
 
 //conexión mongoDB
 try{
@@ -22,7 +22,7 @@ const sessionMiddleware = session({
         mongoOptions: { useNewUrlParser: true },
         ttl: 3600
     }),
-    secret: SECRET,
+    secret: "Alexis",
     resave: true,
     saveUninitialized: true,
       cookie: {

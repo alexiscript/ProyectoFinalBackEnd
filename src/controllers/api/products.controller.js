@@ -7,7 +7,7 @@ import jwt from 'jsonwebtoken';
 import config from '../../config/config.js';
 import { RolForbiden } from '../../utils/customExceptions.js';
 
-const PRIVATE_KEY = config.secret;
+const PRIVATE_KEY = "Secret";
 
 const getProductsPaginate = async (req, res) => {  
     try{

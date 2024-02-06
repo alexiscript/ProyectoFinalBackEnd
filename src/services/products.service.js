@@ -6,7 +6,7 @@ import config from '../config/config.js';
 import { productDeleteNotification, productUpdateNotification } from '../utils/customHTML.js';
 
 const productsManager = new Products();
-const PRIVATE_KEY = config.secret;
+const PRIVATE_KEY = "Secret";
 
 export const getProductsPaginate = async (limit, page, sort, category, stock) => {  
     let query = {};

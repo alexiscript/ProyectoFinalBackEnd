@@ -3,7 +3,7 @@ import passport from 'passport';
 import jwt from 'jsonwebtoken';
 import config from '../../config/config.js';
 
-const PRIVATE_KEY = config.secret;
+const PRIVATE_KEY = "Secret";
 export default class Router {
     constructor() {
         this.router = expressRouter();

@@ -1,9 +1,9 @@
 import mongoose from 'mongoose';
 import Products from '../../../src/dao/dbManagers/products.js'
 import chai from 'chai';
-import config from '../../../src/config/config.js'; 
 
-const URI = config.mongoUrlTesting; 
+
+const URI = "mongodb + srv://Desafio:XHzxaGgsH9DmOh7N@desafio.tsokbhn.mongodb.net/test?retryWrites=true&w=majority"; 
 
 await mongoose.connect(URI);  
 
